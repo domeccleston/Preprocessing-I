@@ -130,7 +130,7 @@ table {
 * {
   box-sizing: border-box;
 }
-/* Set default fonts */
+/* Variables */
 html,
 body {
   height: 100%;
@@ -141,6 +141,7 @@ body {
   justify-content: flex-start;
   flex-wrap: wrap;
   height: 4em;
+  background: #f0e4c5;
   border-bottom: 1px solid lightgrey;
 }
 .navbar .nav-item {
@@ -178,7 +179,7 @@ body {
 .container-main .container-image .avatar-container .avatar {
   size: 100%;
   height: 10em;
-  border: 0.1em solid lightgrey;
+  border: 0.1em solid #f0e4c5;
   border-radius: 50%;
 }
 .container-main .heading-container {
@@ -217,12 +218,15 @@ body {
 .container-main .experience-skills .box li {
   padding: 0.1em;
 }
+.container-main .work-container {
+  padding-top: 3em;
+  padding-bottom: 5em;
+}
 .container-main .work-container h2 {
   font-size: 2em;
   text-decoration: underline;
   text-align: center;
-  padding-bottom: 1em;
-  padding-top: 0.5em;
+  padding-bottom: 2em;
 }
 .container-main .work-container table {
   width: 100%;
@@ -240,5 +244,22 @@ body {
   border-bottom: 1px solid lightgrey;
 }
 .container-main .work-container tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #f0e4c5;
+}
+.container-main footer {
+  background: #f0e4c5;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-main footer h5 {
+  font-size: 1em;
+  vertical-align: center;
+}
+.container-main footer h5 a {
+  text-decoration: none !important;
+  color: black;
+  font-weight: 700px;
 }

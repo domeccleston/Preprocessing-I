@@ -53,7 +53,9 @@ table {
     box-sizing: border-box;
 }
 
-/* Set default fonts */
+/* Variables */
+
+@nice-grey: #f0e4c5;
 
 html, body {
 	height: 100%;
@@ -67,6 +69,7 @@ html, body {
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	height: 4em;
+	background: @nice-grey;
 	border-bottom: 1px solid lightgrey;
 
 	.nav-item {
@@ -85,17 +88,18 @@ html, body {
 
 .container-main {
 
-	hr {
-			border-top: 1px solid lightgrey;
-			width: 80%;
-		}
-
 	height: 100vh;
 	width: 80%;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+
+	hr {
+		border-top: 1px solid lightgrey;
+		width: 80%;
+	}
+	
 
 	.container-image {
 
@@ -111,7 +115,7 @@ html, body {
 			.avatar {
 				size: 100%;
 				height: 10em;
-				border: 0.1em solid lightgrey;
+				border: 0.1em solid @nice-grey;
 				border-radius: 50%;
 			}
 	
@@ -169,12 +173,14 @@ html, body {
 
 	.work-container {
 
+		padding-top: 3em;
+		padding-bottom: 5em;
+
 		h2 {
 			font-size: 2em;
 			text-decoration: underline;
 			text-align: center;	
-			padding-bottom: 1em;
-			padding-top: 0.5em;
+			padding-bottom: 2em;
 		}
 
 		table {
@@ -197,7 +203,28 @@ html, body {
 			border-bottom: 1px solid lightgrey;
 		}
 
-		tr:nth-child(even) {background-color: #f2f2f2;}
+		tr:nth-child(even) {background-color: @nice-grey;}
+	}
+
+	footer {
+		background: @nice-grey;
+		padding-top: 2em;
+		padding-bottom: 2em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		h5 {
+			font-size: 1em;
+			vertical-align: center;	
+
+			a {
+				text-decoration: none !important;
+				color: black;
+				font-weight: 700px;
+			}
+		}
+
 	}
 }
 
