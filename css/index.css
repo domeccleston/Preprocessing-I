@@ -189,7 +189,7 @@ body {
 }
 .container-main .heading-container h3 {
   font-size: 2em;
-  padding: 0.5em 0 0.5em 0;
+  padding-bottom: 0.5em;
 }
 .container-main .heading-container hr {
   border-top: 1px solid lightgrey;
@@ -197,16 +197,18 @@ body {
 }
 .container-main .experience-skills {
   display: flex;
-  background: green;
 }
 .container-main .experience-skills .box {
   height: 20em;
-}
-.container-main .experience-skills .skills-container {
+  width: 50%;
   display: flex;
-  background: blue;
+  justify-content: center;
+}
+.container-main .experience-skills .box h2 {
+  font-size: 2em;
+  text-decoration: underline !important;
+  padding-top: 0.5em;
 }
 .container-main .experience-skills .experience-container {
   display: flex;
-  background: pink;
 }

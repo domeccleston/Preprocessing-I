@@ -129,7 +129,7 @@ html, body {
 
 		h3 {
 			font-size: 2em;
-			padding: @heading-padding;
+			padding-bottom: 0.5em;
 		}
 
 		hr {
@@ -141,21 +141,25 @@ html, body {
 	.experience-skills {
 
 		display: flex;
-		background: green;
 
 		.box {
 			height: 20em;
+			width: 50%;
+			display: flex;
+			justify-content: center;
 
+			h2 {
+				font-size: 2em;
+				text-decoration: underline !important;
+				padding-top: 0.5em;
+			}
 		}
 
 		.skills-container {
-			display: flex;
-			background: blue;
 		}
 
 		.experience-container {
 			display: flex;
-			background: pink
 		}
 	}
 }
