@@ -63,11 +63,11 @@ html, body {
   
 
 .navbar {
-	background: white;
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	height: 5em;
+	height: 4em;
+	border-bottom: 1px solid lightgrey;
 
 	.nav-item {
 		display: flex;
@@ -85,15 +85,15 @@ html, body {
 
 .container-main {
 
-	background: green;
 	height: 100vh;
+	width: 80%;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 
 	.container-image {
 
-		background: pink;
 		padding-top: 5em;
 		display: flex;
 		flex-direction: row;
@@ -106,10 +106,56 @@ html, body {
 			.avatar {
 				size: 100%;
 				height: 10em;
-				border: 0.1em solid grey;
+				border: 0.1em solid lightgrey;
 				border-radius: 50%;
 			}
 	
+		}
+	}
+
+	.heading-container {
+
+		@heading-padding: 0.5em 0 0.5em 0;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		h1 {
+			font-size: 3em;
+			padding: @heading-padding;
+		}
+
+		h3 {
+			font-size: 2em;
+			padding: @heading-padding;
+		}
+
+		hr {
+			border-top: 1px solid lightgrey;
+			width: 80%;
+		}
+	}
+
+	.experience-skills {
+
+		display: flex;
+		background: green;
+
+		.box {
+			height: 20em;
+
+		}
+
+		.skills-container {
+			display: flex;
+			background: blue;
+		}
+
+		.experience-container {
+			display: flex;
+			background: pink
 		}
 	}
 }
