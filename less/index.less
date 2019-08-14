@@ -53,7 +53,187 @@ table {
     box-sizing: border-box;
 }
 
+/* Variables */
+
+@nice-grey: #f0e4c5;
+
 html, body {
-    height: 100%;
+	height: 100%;
+	font-family: Lato, sans-serif;
 }
+
+  
+
+.navbar {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	height: 4em;
+	background: @nice-grey;
+	border-bottom: 1px solid lightgrey;
+
+	.nav-item {
+		display: flex;
+		align-items: center;
+		list-style-type: none;
+		padding: 1em;
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+	}
+
+}
+
+.container-main {
+
+	height: 100vh;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	hr {
+		border-top: 1px solid lightgrey;
+		width: 80%;
+	}
+	
+
+	.container-image {
+
+		padding-top: 5em;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	
+		.avatar-container {
+			display: flex;
+			justify-content: center;
+	
+			.avatar {
+				size: 100%;
+				height: 10em;
+				border: 0.1em solid @nice-grey;
+				border-radius: 50%;
+			}
+	
+		}
+	}
+
+	.heading-container {
+
+		@heading-padding: 0.5em 0 0.5em 0;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		h1 {
+			font-size: 3em;
+			padding: @heading-padding;
+		}
+
+		h3 {
+			font-size: 2em;
+			padding-bottom: 1.5em;
+		}
+
+	}
+
+	.experience-skills {
+
+		display: flex;
+
+
+		@media(max-width: 550px) {
+			display: flex;
+			flex-direction: column;
+		}
+
+
+		.box {
+			height: 20em;
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+
+			h2 {
+				font-size: 2em;
+				text-decoration: underline !important;
+				padding-top: 0.5em;
+			}
+
+			ul {
+				font-size: 1.5em;
+				padding: 1em;	
+				list-style-type: disc;
+			}
+
+			li {
+				padding: 0.1em;
+			}
+		}
+	}
+
+	.work-container {
+
+		padding-top: 3em;
+		padding-bottom: 5em;
+
+		h2 {
+			font-size: 2em;
+			text-decoration: underline;
+			text-align: center;	
+			padding-bottom: 2em;
+		}
+
+		table {
+			width: 100%;
+			border: 1px solid lightgrey;
+		}
+
+
+
+		th {
+			font-weight: bold;
+			text-align: left;
+			padding: 1em;
+			border-bottom: 1px solid lightgrey;
+		}
+
+		td {
+			padding: 1em;
+			vertical-align: bottom;
+			border-bottom: 1px solid lightgrey;
+		}
+
+		tr:nth-child(even) {background-color: @nice-grey;}
+	}
+
+	footer {
+		background: @nice-grey;
+		padding-top: 2em;
+		padding-bottom: 2em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		h5 {
+			font-size: 1em;
+			vertical-align: center;	
+
+			a {
+				text-decoration: none !important;
+				color: black;
+				font-weight: 700px;
+			}
+		}
+
+	}
+}
+
+
 
